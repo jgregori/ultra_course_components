@@ -19,6 +19,7 @@ HTML and Tailwind CSS snippets that improve content layout and appearance in Bla
 
 ### Instructor snippet
 
+![about instructor](https://github.com/jgregori/ultra_course_components/blob/main/about_instructor.png?raw=true)
 
 ## Known limitations
 
