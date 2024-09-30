@@ -58,62 +58,60 @@ Now, inside each locale section, these are the elements that can be customized
 
 2. **Instructor section**. Change this section to populate `name`, `pronoums`(optional), `about` , `image` (needs to be hosted elsewhere) ,`LinkedIn` url, `email` and `phone`.
 
-```json
-                "instructor": {
-                    "name": "Sir John Cleese",
-                    "pronouns": "(He/Him/His)",
-                    "about": "This course is taught by the esteemed Sir John Cleese, an expert in absurdity, master of surrealism, and co-creator of Monty Python’s Flying Circus. With decades of experience in turning the ridiculous into the profound, Sir Cleese will guide you through the nuances of comedic timing, nonsensical dialogue, and why nobody expects the Spanish Inquisition.",
-                    "image": "https://ultra.elearningmedia.es/bbcswebdav/xid-669405_1",
-                    "linkedin": "https://www.linkedin.com/in/john-cleese/",
-                    "email": "john.cleese@example.com",
-                    "phone": "+1234567890",
-```
+    ```json
+                    "instructor": {
+                        "name": "Sir John Cleese",
+                        "pronouns": "(He/Him/His)",
+                        "about": "This course is taught by the esteemed Sir John Cleese, an expert in absurdity, master of surrealism, and co-creator of Monty Python’s Flying Circus. With decades of experience in turning the ridiculous into the profound, Sir Cleese will guide you through the nuances of comedic timing, nonsensical dialogue, and why nobody expects the Spanish Inquisition.",
+                        "image": "https://ultra.elearningmedia.es/bbcswebdav/xid-669405_1",
+                        "linkedin": "https://www.linkedin.com/in/john-cleese/",
+                        "email": "john.cleese@example.com",
+                        "phone": "+1234567890",
+    ```
 
-3.**Skills Section**. Add skills to the skills dictionary to have then displayed as pills in the card.
+3. **Skills Section**. Add skills to the skills dictionary to have then displayed as pills in the card.
 
-```json
-                    "skills": [
-                        "Crop Burning",
-                        "Sailing"
-                    ],
-```
+    ```json
+                        "skills": [
+                            "Crop Burning",
+                            "Sailing"
+                        ],
+    ```
 
-4.**Research section**. Add as many research papers as desired, providing `title`,`description` and `link` 
+4. **Research section**. Add as many research papers as desired, providing `title`,`description` and `link` 
 
-```json
-                    "research": [
-                        {
-                            "title": "The Absurdity of Comedy",
-                            "description": "A deep dive into the role of absurdity in modern comedy and its impact on audiences.",
-                            "link": "https://www.example.com/absurdity-comedy"
-                        },
-                        {
-                            "title": "Comedic Timing in Surrealism",
-                            "description": "Exploring how timing enhances the absurdity in surrealist comedy.",
-                            "link": "https://www.example.com/comedic-timing"
-                        },
-                        {
-                            "title": "The Impact of Nonsense Dialogues",
-                            "description": "Analyzing the effect of nonsensical dialogues in the audience's perception of humor.",
-                            "link": "https://www.example.com/nonsense-dialogues"
-                        }
-                    ],
-```
+    ```json
+                        "research": [
+                            {
+                                "title": "The Absurdity of Comedy",
+                                "description": "A deep dive into the role of absurdity in modern comedy and its impact on audiences.",
+                                "link": "https://www.example.com/absurdity-comedy"
+                            },
+                            {
+                                "title": "Comedic Timing in Surrealism",
+                                "description": "Exploring how timing enhances the absurdity in surrealist comedy.",
+                                "link": "https://www.example.com/comedic-timing"
+                            },
+                            {
+                                "title": "The Impact of Nonsense Dialogues",
+                                "description": "Analyzing the effect of nonsensical dialogues in the audience's perception of humor.",
+                                "link": "https://www.example.com/nonsense-dialogues"
+                            }
+                        ],
+    ```
 
-5.Finally customize the **card colors** by providing values for the card´s `background`, `text`, `pillbackground` (for skills) and `pilltext`
+5. Finally customize the **card colors** by providing values for the card´s `background`, `text`, `pillbackground` (for skills) and `pilltext`
 
-```json
+    ```json
 
-                    "colors": {
-                        "background": "#FFFFFF",
-                        "text": "#d16de3",
-                        "pillBackground": "#d16de3",
-                        "pillText": "#FFFFFF"
-                    }
-                }
-            },
+                        "colors": {
+                            "background": "#FFFFFF",
+                            "text": "#d16de3",
+                            "pillBackground": "#d16de3",
+                            "pillText": "#FFFFFF"
+                        }      
 
-```
+    ```
 
 ## Known limitations
 
