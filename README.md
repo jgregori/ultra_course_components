@@ -4,9 +4,9 @@ HTML and Tailwind CSS snippets that improve content layout and appearance in Bla
 
 ## Main features
 
-- Responsive
-- Multi-language
-- Accesible
+- **Responsive**. Works great in larger screens, mobile browses and the Blackboard APP
+- **Multi-language**. Added some JS to toogle languages, currently L2R languages can be included.
+- **Accesible**. Work in progress with ARIA labels and correct ALT texts.
 
 ## How to use
 
@@ -19,7 +19,8 @@ HTML and Tailwind CSS snippets that improve content layout and appearance in Bla
 
 ### Single Instructor snippet
 
-![about instructor](./demo_img/about_instructor_lg.png)
+![about instructor large screen](./demo_img/about_instructor_lg.png)
+![about instructor small screen ](./demo_img/about_instructor_sm.png)
 
 A simple Card to showcase a single/main course instructor, it includes the following customizable elements:
 
@@ -32,9 +33,9 @@ A simple Card to showcase a single/main course instructor, it includes the follo
 7. **Instructor skills/specialities**
 8. **Link to research articles**
 
-To customize the content, locate the `const = data` json around line 69 of the file. I have kept everything in a single file be able to use it directly in an ultra document.
+To customize the content, locate the `const = data` json around line 69 of the file. I have kept everything in a single file be able to use it directly in an Ultra document.
 
-First, inside `data` there is a section for each language, different languages can have different cotents. More locales can be added, but you will need to add the new locale to the language toogle so the option becomes available.
+First, inside `data` there is a section for each language, different languages can have different contents. More locales can be added, but you will need to add the new locale to the language toogle so the option becomes available.
 
 ```json
 "en": {},
@@ -112,6 +113,55 @@ Now, inside each locale section, these are the elements that can be customized
                         }      
 
     ```
+
+### About the course snippet
+
+![about instructor large screen](./demo_img/about_course_lg.png)
+![about instructor small screen ](./demo_img/about_course_sm.png)
+
+A card to provide information and tips about the course, useful to share elements about themes, methodologies, course mechanics... it includes the following customizable elements:
+
+1. **Title**
+2. **Language toogle** (Default EN/FR/ES)
+3. **Description**
+4. **sections**
+
+To customize the content, locate the `const = course_content` json around line 62 of the file. I have kept everything in a single file be able to use it directly in an Ultra document.
+
+First, inside `course_content` there is a section for each language, different languages can have different contents. More locales can be added, but you will need to add the new locale to the language toogle so the option becomes available.
+
+```json
+"en": {},
+"fr": {},
+"es": {},
+
+```
+
+Now, inside each locale section, these are the elements that can be customized
+
+1. **Title and description**
+   
+```json
+               "title": "How the Course Works",
+                "description": "You might think this course would be typical. But, to quote the Spanish Inquisition: \"Nobody expects...\" well, anything in this course to be typical. Each week, you will be introduced to new absurdities, surprise lessons, and sudden diversions (like a discussion about coconuts). Be prepared to laugh, analyze, and eventually create your own Monty Python-inspired content.",
+```
+
+2.**Content sections**. Add as many content sections as you wish, providing `title`,`description`,`image` for each section.
+
+```json
+                "sections": [
+                    {
+                        "title": "Learn at Your Own Pace",
+                        "description": "Access the course content anytime through our platform. No need to rush—absurdity takes time.",
+                        "image": "https://ultra.elearningmedia.es/bbcswebdav/xid-669412_1"
+                    },
+                    {
+                        "title": "Weekly Assignments",
+                        "description": "Each week includes assignments to help you create your own absurd, nonsensical, yet brilliant sketches.",
+                        "image": "https://ultra.elearningmedia.es/bbcswebdav/xid-669415_1"
+                    },
+                ]
+```
 
 ## Known limitations
 
